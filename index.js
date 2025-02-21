@@ -10,7 +10,7 @@ const server = http.createServer(app);
 // Cria uma instância do Socket.IO, configurando o CORS
 const io = socketIo(server, {
   cors: {
-    origin: 'http://192.168.15.21:8080',  // Permite apenas requisições dessa origem
+    origin: '*',  // Permite apenas requisições dessa origem
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type']
   }
