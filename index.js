@@ -33,6 +33,6 @@ io.on('connection', (socket) => {
 });
 
 // Inicia o servidor
-server.listen(port, '192.168.15.21', () => {
+server.listen(port, () => {
   console.log(`Servidor rodando na porta ${port}`);
 });
